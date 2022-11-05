@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import queryString from 'query-string'
+import { toast } from 'react-toastify';
 
 import { useForm } from "../../hooks/useForm";
 import { CharacterCard } from "../components"
@@ -22,7 +23,21 @@ export const SearchPage = () => {
 
   const onSearchSubmit = (e) => {
     e.preventDefault();
-    if(formState.searchText.trim().length <=1) return;
+    // if(formState.searchText.trim().length <=1) return;
+    if(formState.searchText.trim().length <=1) {
+      toast.info('Please, type at least 2 chars', {
+        position: "bottom-center",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
+
+        return;
+    };
   
     //* navega a la mismisima pagina actual, solo cambia el qery params 
     navigate(`?q=${formState.searchText}`)
@@ -71,7 +86,7 @@ export const SearchPage = () => {
 
         {
           characters.map((e) =>  (
-            <div className="mb-2">
+            <div className="mb-2" key={e.id}>
               <CharacterCard key={e.id}{...e} />
             </div>
           ))

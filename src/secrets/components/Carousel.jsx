@@ -2,8 +2,8 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import img1 from '../../../assets/secrets/order_movies.jpg'
 import img2 from '../../../assets/secrets/kylo_guard.webp'
-import img3 from '../../../assets/secrets/boba_lives.webp'
-import img4 from '../../../assets/secrets/back_snow.jpg'
+import img3 from '../../../assets/secrets/trap2.jpg'
+import img4 from '../../../assets/secrets/obiwan_trick2.jpg'
 
 export function CarouselSecrets() {
 
@@ -15,9 +15,10 @@ export function CarouselSecrets() {
         {secrets.map((e) => (
         <Carousel.Item>
             <img
-              className="d-block"
-            //   className="img-fluid w-100 h-100"
-              // style={{width:'90vh'}}
+              className="d-block w-100"
+              // className="img img-fluid"
+              // style={{maxHeight:'65vh', width:'80vh'}}
+              style={{maxHeight:'70vh'}}
               src={e}
               key={e}
               alt="First slide"

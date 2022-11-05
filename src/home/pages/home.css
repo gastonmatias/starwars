@@ -1,0 +1,21 @@
+.background-sith{
+    /* background: #000 linear-gradient( */
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),url('../../../assets/mix/logo_sith.png');
+    background-attachment: 'local';
+    background-position: center;
+    background-size: cover;
+}
+
+.background-jedi{
+    /* background: #000 linear-gradient( */
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),url('../../../assets/mix/logo_jedi.jpg');
+    background-attachment: 'local';
+    background-position: center;
+    background-size: cover;
+}

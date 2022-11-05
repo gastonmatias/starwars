@@ -9,8 +9,9 @@ export const SecretsPage = () => {
 
     {/* <div className="d-flex justify-content-center" style={{"max-width": "90vh"}}> */}
     {/* <div className="d-flex justify-content-center" > */}
-      <CarouselSecrets/>
-    {/* </div> */}
+    <div className="row" >
+      <CarouselSecrets className='col-4'/>
+    </div>
 
     </>
   )

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 
+// import images from '../../assets/characters/*'
+
 export const CharacterCard = ({
     id,
     name,
@@ -18,13 +20,18 @@ export const CharacterCard = ({
 }) => {
 
   // const characterImageUrl = `/assets/characters/${imgHor}.jpg`
-  const characterImageUrl = `/src/assets/characters/${imgHor}.jpg`
+  // const characterImageUrl = import(`/src/assets/characters/${imgHor}.jpg`)
+  
+  // const characterImageUrl = `../../src/assets/characters/${imgHor}.jpg`
+  // const characterImageUrl = (`../../src/assets/characters/${imgHor}.jpg`)
+  // const characterImageUrl = `./assets/characters/${imgHor}.jpg`
 
   return (
 
   <Col >
     <Card className="border border-dark">
-      <Card.Img variant="top" src={characterImageUrl} 
+      {/* <Card.Img variant="top" src={characterImageUrl}  */}
+      <Card.Img variant="top" src={imgHor} 
                 className='animate__animated animate__fadeIn animate__fast' />
       <Card.Body>
         <Card.Title className="display-5">{name}</Card.Title>

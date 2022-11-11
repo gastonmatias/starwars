@@ -26,14 +26,12 @@ export const CharacterPage = () => {
     return <Navigate to='/'/>
   }
 
-  const characterImage = `/assets/characters/${character.imgHor}.jpg`
-
   return (
   <>
   <div className="row my-5 justify-content-center" >
     
     <div className="col-12 col-sm-12 col-lg-6 align-items-center mb-1">
-      <Card.Img variant="top" src={characterImage} 
+      <Card.Img variant="top" src={character.imgVer} 
                 className="img-fluid rounded animate__animated animate__slideInLeft animate__fast" />
     </div>
     

@@ -14,13 +14,22 @@ export const Header = () => {
 
   const navigate = useNavigate()
   
-  const onLogout = () => {
-    
-    logout()
-    
-    navigate('/login',{
-          replace:true // para qe usuario recien deslogueado no pueda volver a "pagina anterior logueada"
+  const onLog = () => {
+    if (user) {
+      logout()
+      toast('May the force be with you!', {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
       });
+      navigate('/home',{replace:true});
+    } 
+    else navigate('/login',{replace:true})
   }
 
   const onClickSecrets = () => {
@@ -69,10 +78,11 @@ export const Header = () => {
             <Nav.Link >
               <ul className="navbar-nav ml-auto  d-flex w-100 justify-content-end">
                 <span className='nav-item nav-link text-primary'>{user && `@${user.name}`}</span>
-                <button className='nav-item nav-link btn btn-outline-primary'
-                        onClick={onLogout}>
-                    {user ? 'Logout' : 'Login'}
-                </button>
+                
+                  <button className='nav-item nav-link btn btn-outline-primary'
+                  onClick={onLog}>
+                            {user ? 'Logout' : 'Login'}
+                  </button>
               </ul>
             </Nav.Link>
           </Nav>

@@ -6,9 +6,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import { useContext } from 'react';
 import { AuthContext } from '../../auth/context/AuthContext';
 
+import { toast } from 'react-toastify';
+
 export const Header = () => {
     
-  const {user,logout} = useContext(AuthContext)
+  const {user,logout,logged} = useContext(AuthContext)
 
   const navigate = useNavigate()
   
@@ -19,6 +21,19 @@ export const Header = () => {
     navigate('/login',{
           replace:true // para qe usuario recien deslogueado no pueda volver a "pagina anterior logueada"
       });
+  }
+
+  const onClickSecrets = () => {
+    !logged &&  toast.info('You must login before access to the secrets!', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
   }
 
   return (
@@ -38,7 +53,7 @@ export const Header = () => {
           </Nav>
 
           <Nav className="d-flex justify-content-end">
-            <NavLink className="nav-item nav-link" to="/secrets">Force Secrets</NavLink>
+            <NavLink className="nav-item nav-link" to="/secrets" onClick={onClickSecrets}>Force Secrets</NavLink>
           </Nav>
           
           <Nav>

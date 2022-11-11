@@ -27,7 +27,7 @@ export const Header = () => {
   <div style={{'marginBottom': '6rem'}}>
   <Navbar className='' collapseOnSelect expand="sm" bg="dark" variant="dark" fixed='top' >
         <Container>
-        <Navbar.Brand href="/welcome">Star Wars</Navbar.Brand>
+        <Navbar.Brand href="/">Star Wars</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

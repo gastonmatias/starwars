@@ -9,7 +9,7 @@ export const HomeRoutes = () => {
 
         <div className="container">
             <Routes>
-                <Route path="home" element={<Home/>}/>
+                <Route path="" element={<Home/>}/>
                 <Route path="*" element={<Navigate to='/home' />} />    
             </Routes>
         </div>

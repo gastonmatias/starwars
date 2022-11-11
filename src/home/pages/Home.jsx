@@ -1,6 +1,7 @@
 import { Col , Row  } from "react-bootstrap"
 
-import logoSith from '../../../assets/mix/logo_sith.png'
+// import logoSith from '../../../assets/mix/logo_sith.png'
+// import logoSith from '../../assets/mix/logo_sith.png'
 import './home.css'
 
 

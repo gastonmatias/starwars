@@ -1,5 +1,6 @@
 body {
-    background: #000 url('../../../assets/backgrounds/blackStars1.jpg');
+    /* background: #000 url('../../../assets/backgrounds/blackStars1.jpg'); */
+    background: #000 url('../../src/assets/backgrounds/blackStars1.jpg');
     background-attachment: fixed;
     /* background-position: center center; */
     

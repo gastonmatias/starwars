@@ -2,6 +2,7 @@ import obiwan_hor    from '../../assets/characters/obiwan_hor.jpg'
 import anakin_hor    from '../../assets/characters/anakin_hor.jpg'
 import ahsoka_hor    from '../../assets/characters/ahsoka_hor.jpg'
 import quigon_hor    from '../../assets/characters/quigon_hor.jpg'
+import quigon_ver    from '../../assets/characters/quigon_ver.png'
 import windu_hor     from '../../assets/characters/windu_hor.jpg'
 import aayla_hor     from '../../assets/characters/aayla_hor.jpg'
 import aayla_ver     from '../../assets/characters/aayla_ver.jpg'
@@ -29,5 +30,6 @@ export const images={
     palpatine_hor,
     maul_hor ,
     kreia_hor,
-    aayla_ver
+    aayla_ver,
+    quigon_ver
 }

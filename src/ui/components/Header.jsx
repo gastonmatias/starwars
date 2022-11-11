@@ -1,12 +1,12 @@
 import { NavLink, useNavigate } from 'react-router-dom';
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useContext } from 'react';
 import { AuthContext } from '../../auth/context/AuthContext';
-
 import { toast } from 'react-toastify';
+
+import logo from '../../assets/mix/logo.png'
 
 export const Header = () => {
     
@@ -42,7 +42,16 @@ export const Header = () => {
   <div style={{'marginBottom': '6rem'}}>
   <Navbar className='' collapseOnSelect expand="sm" bg="dark" variant="dark" fixed='top' >
         <Container>
-        <Navbar.Brand href="/">Star Wars</Navbar.Brand>
+        {/* <Navbar.Brand href="/">Star Wars</Navbar.Brand> */}
+        <Navbar.Brand href="/">
+        <img
+              src={logo}
+              width="100"
+              height="40"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

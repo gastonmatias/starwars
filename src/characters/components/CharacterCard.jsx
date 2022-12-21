@@ -20,13 +20,6 @@ export const CharacterCard = ({
     rank
 }) => {
 
-  // const characterImageUrl = `/assets/characters/${imgHor}.jpg`
-  // const characterImageUrl = import(`/src/assets/characters/${imgHor}.jpg`)
-  
-  // const characterImageUrl = `../../src/assets/characters/${imgHor}.jpg`
-  // const characterImageUrl = (`../../src/assets/characters/${imgHor}.jpg`)
-  // const characterImageUrl = `./assets/characters/${imgHor}.jpg`
-
   return (
 
   <Col >

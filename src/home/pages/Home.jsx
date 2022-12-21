@@ -12,7 +12,6 @@ export const Home = () => {
   const handleClickSith = () => {
     navigate('/characters/sith')
   }
-
   
   return (
     <>
@@ -28,7 +27,7 @@ export const Home = () => {
             </div>
           
             <div className="container pt-4 pb-2">
-              <h3 className="align-self-end text-center display-7 text-white">Want too see some references?</h3>
+              <h3 className="align-self-end text-center display-7 text-white">Want to see some references?</h3>
               <div className="btn btn-primary d-flex justify-content-center" onClick={handleClickJedi}>Jedis</div>
             </div>
 
@@ -44,8 +43,7 @@ export const Home = () => {
           </div>
 
           <div className="container pt-4 pb-2">
-            <h3 className="align-self-end display-7 text-white">Want too see some references?</h3>
-            {/* <button className="btn btn-danger d-flex text-center justify-content-center" href="/characters/sith">Siths</button> */}
+            <h3 className="align-self-end display-7 text-white">Want to see some references?</h3>
             <div className="btn btn-danger d-flex justify-content-center" onClick={handleClickSith}>Siths</div>
           </div>
       </div>

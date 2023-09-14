@@ -71,7 +71,7 @@ export const characters = [
         "id":          6,
         "name":        "Aayla Secura",
         "imgHor":      images.aayla_hor,
-        "imgVer":      images.aayla_ver,
+        "imgVer":      images.aayla_hor,
         "rank":        "Jedi Knight",
         "side":        "Light",
         "homeWorld":   "Ryloth",
